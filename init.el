@@ -30,4 +30,12 @@
 (setq backup-inhibited t)
 
 ;; remove cc-mode
-(load "cc-mode" nil t)
+;; (load "cc-mode" nil t)
+
+;; add load path and subdirectories path
+;;(let ((default-directory "~/.emacs.d/lib"))
+;;      (normal-top-level-add-subdirs-to-load-path))
+
+(load "~/.emacs.d/lib/php-mode/php-mode.el")
+(require 'php-mode)
+(add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
