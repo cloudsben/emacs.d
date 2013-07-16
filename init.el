@@ -29,5 +29,5 @@
 
 (setq backup-inhibited t)
 
-
-
+;; remove cc-mode
+(load "cc-mode" nil t)
